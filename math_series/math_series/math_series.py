@@ -22,14 +22,14 @@ def lucas(n):
         return 1
     return lucas(n-1) + lucas(n-2)
 
-#another function
-# if sum_series(n,n0:3,n1:2 ) 
-def other_series(n,n0,n1):
-    pass
-
-
+   
 # sum_series
 def sum_series(n, n0=0 , n1=1 ):
+    if n == 0:
+      return n0
+    if n == 1:
+      return n1
+    return sum_series(n-1,n0,n1) + sum_series(n-2,n0,n1)    
     """
 compute the nth value of a summation series.
 
@@ -46,12 +46,14 @@ compute the nth value of a summation series.
     The defaults are set to 0, 1, so if you don't pass in any values, you'll
     get the fibonacci sercies
     """
-    if n0==0 and n1==1:
-        return fibonacci(n)    
-    elif n0 == 2 and n1==1:
-        return lucas(n)
-    else:
-        return other_series(n,n0,n1)
+ 
+
+    # if n0==0 and n1==1:
+    #     return fibonacci(n)    
+    # elif n0 == 2 and n1==1:
+    #     return lucas(n)
+    # else:
+    #     return (n,n0,n1)
 
 
 

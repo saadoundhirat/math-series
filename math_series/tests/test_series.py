@@ -43,4 +43,6 @@ def test_sum_series():
     # test lucas using the sum_series
     assert sum_series(5,2,1) == lucas(5)
 
-    #  I dont get what is the case with the last function i dont get the functionality case if you can help with that tommorow
+    #  test others using the sum_series
+    assert sum_series(3, 3, 2) == 7
+    assert sum_series(4, 3, 2) == 12
