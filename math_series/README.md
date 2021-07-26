@@ -33,4 +33,4 @@ Lab estmited time:
    note: the lab is not finished yet iam trying to under stand the function cases
 
 Pull Request Link ckick here :
-[Pull Request Link]()
+[Pull Request Link](https://github.com/saadoundhirat/math-series/pull/1)
